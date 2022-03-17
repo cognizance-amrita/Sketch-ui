@@ -63,6 +63,43 @@ export namespace Components {
          */
         "type": 'button' | 'reset' | 'submit';
     }
+    interface SkIcon {
+        "color": string;
+        "name": string;
+        "size": number;
+        "svgHtml": string;
+    }
+    interface SkLabel {
+        /**
+          * Theme based on which the label is styled.
+         */
+        "color": | 'primary'
+   | 'outline-primary'
+   | 'secondary'
+   | 'outline-secondary'
+   | 'tertiary'
+   | 'outline-tertiary'
+   | 'success'
+   | 'outline-success'
+   | 'warning'
+   | 'outline-warning'
+   | 'danger'
+   | 'outline-danger'
+   | 'light'
+   | 'outline-light'
+   | 'dark'
+   | 'outline-dark'
+   | 'blackcurrant'
+   | 'outline-blackcurrant';
+        /**
+          * Size of the label.
+         */
+        "size": 'nano' | 'small' | 'medium' | 'large';
+        /**
+          * display value of label .
+         */
+        "value": string;
+    }
 }
 declare global {
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
@@ -77,9 +114,23 @@ declare global {
         prototype: HTMLSkButtonElement;
         new (): HTMLSkButtonElement;
     };
+    interface HTMLSkIconElement extends Components.SkIcon, HTMLStencilElement {
+    }
+    var HTMLSkIconElement: {
+        prototype: HTMLSkIconElement;
+        new (): HTMLSkIconElement;
+    };
+    interface HTMLSkLabelElement extends Components.SkLabel, HTMLStencilElement {
+    }
+    var HTMLSkLabelElement: {
+        prototype: HTMLSkLabelElement;
+        new (): HTMLSkLabelElement;
+    };
     interface HTMLElementTagNameMap {
         "my-component": HTMLMyComponentElement;
         "sk-button": HTMLSkButtonElement;
+        "sk-icon": HTMLSkIconElement;
+        "sk-label": HTMLSkLabelElement;
     }
 }
 declare namespace LocalJSX {
@@ -152,9 +203,48 @@ declare namespace LocalJSX {
          */
         "type"?: 'button' | 'reset' | 'submit';
     }
+    interface SkIcon {
+        "color"?: string;
+        "name"?: string;
+        "size"?: number;
+        "svgHtml"?: string;
+    }
+    interface SkLabel {
+        /**
+          * Theme based on which the label is styled.
+         */
+        "color"?: | 'primary'
+   | 'outline-primary'
+   | 'secondary'
+   | 'outline-secondary'
+   | 'tertiary'
+   | 'outline-tertiary'
+   | 'success'
+   | 'outline-success'
+   | 'warning'
+   | 'outline-warning'
+   | 'danger'
+   | 'outline-danger'
+   | 'light'
+   | 'outline-light'
+   | 'dark'
+   | 'outline-dark'
+   | 'blackcurrant'
+   | 'outline-blackcurrant';
+        /**
+          * Size of the label.
+         */
+        "size"?: 'nano' | 'small' | 'medium' | 'large';
+        /**
+          * display value of label .
+         */
+        "value"?: string;
+    }
     interface IntrinsicElements {
         "my-component": MyComponent;
         "sk-button": SkButton;
+        "sk-icon": SkIcon;
+        "sk-label": SkLabel;
     }
 }
 export { LocalJSX as JSX };
@@ -163,6 +253,8 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
             "sk-button": LocalJSX.SkButton & JSXBase.HTMLAttributes<HTMLSkButtonElement>;
+            "sk-icon": LocalJSX.SkIcon & JSXBase.HTMLAttributes<HTMLSkIconElement>;
+            "sk-label": LocalJSX.SkLabel & JSXBase.HTMLAttributes<HTMLSkLabelElement>;
         }
     }
 }

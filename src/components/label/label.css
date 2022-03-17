@@ -1,0 +1,123 @@
+@import url('../../styles/sketchui.css');
+
+.sk-label {
+  color: var(--color-dark);
+  border: 1px solid var(--color-smoke-300);
+  font-weight: 500;
+  padding: 2px 4px;
+  border-radius: 5px;
+  background-color: var(--color-white);
+  font-size: var(--font-size-14);
+}
+
+.sk-label--primary {
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+.sk-label--outline-primary {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+
+.sk-label--secondary {
+  color: var(--color-white);
+  background-color: var(--color-secondary);
+  border: 1px solid var(--color-secondary);
+}
+.sk-label--outline-secondary {
+  background-color: var(--color-white);
+  color: var(--color-secondary);
+  border: 1px solid var(--color-secondary);
+}
+
+.sk-label--success {
+    color: var(--color-white);
+    background-color: var(--color-success);
+    border: 1px solid var(--color-success);
+  }
+  .sk-label--outline-success {
+    background-color: var(--color-white);
+    color: var(--color-success);
+    border: 1px solid var(--color-success);
+  }
+
+.sk-label--warning {
+  color: var(--color-white);
+  background-color: var(--color-warning);
+  border: 1px solid var(--color-warning);
+}
+.sk-label--outline-warning {
+  background-color: var(--color-white);
+  color: var(--color-warning);
+  border: 1px solid var(--color-warning);
+}
+
+.sk-label--info {
+  color: var(--color-white);
+  background-color: var(--color-info);
+  border: 1px solid var(--color-info);
+}
+.sk-label--outline-info {
+  background-color: var(--color-white);
+  color: var(--color-info);
+  border: 1px solid var(--color-info);
+}
+
+.sk-label--light {
+  color: var(--color-white);
+  background-color: var(--color-light);
+  border: 1px solid var(--color-light);
+}
+.sk-label--outline-light {
+  background-color: var(--color-white);
+  color: var(--color-light);
+  border: 1px solid var(--color-light);
+}
+
+.sk-label--dark {
+  color: var(--color-white);
+  background-color: var(--color-dark);
+  border: 1px solid var(--color-dark);
+}
+.sk-label--outline-dark {
+  background-color: var(--color-white);
+  color: var(--color-dark);
+  border: 1px solid var(--color-dark);
+}
+
+.sk-label--blackcurrant {
+  color: var(--color-white);
+  background-color: var(--color-blackcurrant);
+  border: 1px solid var(--color-blackcurrant);
+}
+.sk-label--outline-blackcurrant {
+  background-color: var(--color-white);
+  color: var(--color-blackcurrant);
+  border: 1px solid var(--color-blackcurrant);
+}
+
+.sk-label--danger {
+  color: var(--color-white);
+  background-color: var(--color-danger);
+  border: 1px solid var(--color-danger);
+}
+.sk-label--outline-danger {
+  background-color: var(--color-white);
+  color: var(--color-danger);
+  border: 1px solid var(--color-danger);
+}
+
+.sk-label--nano {
+  font-size: var(--font-size-10);
+  font-weight: var(--font-weight-400);
+}
+
+.sk-label--medium {
+  font-size: var(--font-size-18);
+}
+
+.sk-label--large {
+  font-size: var(--font-size-24);
+}
