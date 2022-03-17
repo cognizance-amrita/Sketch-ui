@@ -1,0 +1,85 @@
+:root{
+
+    /* === Color palette === */
+    --color-white: #fff;
+
+    --color-primary: #1e65db;
+    --color-primary-hover: #1a5ecf;
+    --color-secondary: #FF0080;
+    --color-secondary-hover: #f10079;
+    --color-success: #10BC10;
+    --color-success-hover: #1bb61b;
+    --color-danger: #EA2027;
+    --color-danger-hover : #df1f25;
+    --color-warning: #FFC312;
+    --color-warning-hover: #ebb517;
+    --color-info: #43B0F1;
+    --color-info-hover: #3a9de8; 
+    --color-light: #E3E8F0;
+    --color-dark: #44444C;
+    --color-blackcurrant : #341948;
+    --color-blackcurrant-hover : #411d5c;
+    
+    --color-sky-900: #12344d;
+    --color-sky-800: #264966;
+    --color-sky-700: #0f1011;
+    --color-sky-600: #447093;
+
+    --color-rose-900: #eb0076;
+    --color-rose-800: #db006e;
+    --color-rose-300: #fd46a1;
+    --color-rose-50: #fd6cb4;
+  
+    --color-smoke-700: #475867;
+    --color-smoke-300: #92a2b1;
+    --color-smoke-100: #cfd7df;
+    --color-smoke-50: #ebeff3;
+    --color-smoke-25: #f3f5f7;
+  
+    --color-forest-800: #00a500;
+    --color-forest-500: #00bb00;
+    --color-sky-100: #b4e5da;
+    --color-sky-50: #e0f5f1;
+  
+    --color-water-100: #bbdcfe;
+    --color-water-50: #e5f2fd;
+  
+    --color-fire-900: #c71417;
+    --color-fire-800: #d72d30;
+    --color-fire-100: #ffd0d6;
+    --color-fire-50: #ffecf0;
+  
+    --color-sun-700: #ed6c1e;
+    --color-sun-300: #ffa443;
+    --color-sun-250: #f5ba0e;
+    --color-sun-100: #fedcb3;
+    --color-sun-50: #fef1e1;
+
+    --color-blackcurrant-900 : #3c1956;
+    --color-blackcurrant-500 : #613383;
+    --color-blackcurrant-100 : #70359d;
+    /* === Color palette === */
+  
+    /* === Border colors === */
+    --border-color: var(--color-smoke-100);
+    --border-success-color: var(--color-forest-100);
+    --border-info-color: var(--color-water-100);
+    --border-danger-color: var(--color-fire-100);
+    --border-warning-color: var(--color-sun-100);
+    /* === Border colors === */
+  
+    /* === Background colors === */
+    --bg-dark: var(--color-sky-900);
+    --bg-success: var(--color-forest-50);
+    --bg-info: var(--color-water-50);
+    --bg-danger: var(--color-fire-50);
+    --bg-warning: var(--color-sun-50);
+    /* === Background colors === */
+  
+    /* === Border radius === */
+    --radius: 5px;
+    --radius-small: 2px;
+    /* === Border radius === */
+
+    --active-box-shadow: inset 0 0 4px 0 var( --color-smoke-300);
+  }

@@ -1,0 +1,9 @@
+@import url("./variables/colors.css");
+@import url("./variables/typography.css");
+:host {
+    font-family: var(--font-stack);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+  }
+  
